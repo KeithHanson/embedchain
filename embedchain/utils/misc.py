@@ -440,6 +440,7 @@ def validate_config(config_data):
                     "azure_openai",
                     "google",
                     "mistralai",
+                    "ollama",
                 ),
                 Optional("config"): {
                     Optional("model"): Optional(str),
@@ -448,6 +449,7 @@ def validate_config(config_data):
                     Optional("title"): str,
                     Optional("task_type"): str,
                     Optional("vector_dimension"): int,
+                    Optional("base_url"): str,
                 },
             },
             Optional("embedding_model"): {
